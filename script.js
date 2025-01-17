@@ -1,31 +1,22 @@
-let campo = document.getElementById('start');
-let botao = document.getElementById('botao');
-let lista = document.getElementById('iselect');
-let res = document.getElementById('res');
-let valores = []
+let num = document.getElementById('start')
+let lista = document.getElementById('ilista')
+let res = document.getElementById('botao')
+let vetores = []
+
+
+function inumero(n) {
+
+}
+
+function inlista(n , 1) {
+
+}
+
 
 function contar() {
+    if(inumero(num.value) && inlista(num.value, valores)) {
 
-    if(isnumero(campo.value) && !inlista(campo.value)) {
-        alert('Tudo ok')
     } else {
-        window.alert('Valor inválido ou já encontrado na lista')
-    }
-
-}
-
-function isnumero(n) {
-    if(Number(n) >= 1 && Number(n) <= 100) {
-        return true;
-    } else {
-        return false
-    }
-}
-
-function inlista(n, l) {
-    if (l.indexOf(Number(n)) != -1) {
-        return true;
-    } else {
-        return false;
+        alert('Por favor, insira um número inteiro positivo!')
     }
 }
